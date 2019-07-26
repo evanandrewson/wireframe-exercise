@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    padding: 15px;
+    background-color: #696969;
+    align-self: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 200px;
+}
+
+main {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    margin-top: 50px;
+    height: 70px;
+    width: 760px;
+    align-self: center;
+    color: #C0C0C0;
+}
+
+a {
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 450px 375px 400px;
+    grid-template-areas: "hero-image hero-image hero-image"
+                         "sub-banner1 sub-banner2 sub-banner3"
+                         "featured-section featured-section featured-section";
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.hero-image {
+    grid-area: hero-image;
+}
+
+.sub-banner1 {
+    grid-area: sub-banner1;
+}
+
+.sub-banner2 {
+    grid-area: sub-banner2;
+}
+
+.sub-banner3 {
+    grid-area: sub-banner3;
+}
+
+.featured-section {
+    grid-area: featured-section;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "featured-section-banner featured-section-text";
+    grid-gap: 30px;
+}
+
+.featured-section-banner {
+    margin-right: 30px;
+    grid-area: featured-section-banner;
+}
+
+.featured-section-text {
+    grid-area: featured-section-text;
+    width: 480px;
+    height: 400px;
+}
+
+p {
+    overflow: scroll;
+    height: 363px;
+    font-style: italic;
+}
+
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: #696969;
+    margin-top: 30px;
+}
